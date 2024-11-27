@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale 1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+        <title>To-Do List</title>
+        <style>
+            body {
+    background: linear-gradient(-45deg, #a374a3, #13b69d, #17d4b8, #088b66,  #82a4a7);
+    animation: bg 12s ease infinite;
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes bg{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0% 50%;}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+    
+h1 {
+    height: 80px;
+    padding: 0;
+    margin: 20px 0 0 37%;
+}
+
+.all {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 370px;
+    height: 450px;
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, .4);
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 20px;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(27,193,120,0.8);
+}
+
+.container .form-box {
+    padding: 40px;
+    width: 100%;
+}
+
+.container .input {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    border-bottom: 2px solid #162938;
+}
+
+.input label {
+    position: absolute;
+    top: 70%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-weight: 600;
+    transition: .4s;
+    color: #162938;
+    /*text-shadow: .2px .2px 1px rgba(27,193,120,0.8);*/
+}
+
+.input input {
+    width: 100%;
+    height: 150%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 30px 0 0;
+}
+
+.input i {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    transform: translateY(-50%);
+    top: 70%;
+    text-shadow: .8px .8px 1px rgba(27,193,120,0.8);
+}
+
+.input input:focus~label,
+.input input:valid~label {
+    top: 35px;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    margin: 60px 0 25px 0;
+    box-shadow: 2px 2px 5px black;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(23, 212, 184);
+    text-shadow: .5px .5px 1px rgba(0,0,0,.2);
+}
+
+
+button:hover {
+    transform: scale(1.01);
+}
+
+.container .register {
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.container .register:active {
+    transform: scale(.99);
+}
+
+a:link, a:visited {
+    color: #1b1b62;
+}
+
+a:active {
+    color: rgb(23, 212, 184);
+}
+
+.logo i{
+    position: absolute;
+    font-size: 2em;
+    transform: translateX(335%);
+    padding: 2px 0;
+    margin: 0;
+}
+
+.logo {
+    text-shadow: .5px .5px 1px rgba(27,193,120,0.8);
+    margin: 0;
+    padding: 0 ;
+
+}
+        </style>
+    </head>
+    <body>
+        
+        <div class="all">
+        <div class="logo">
+            <span><i class='bx bx-pen'></i><h1>letsdoit!</h1></span>
+            </div>
+        <div class="container">
+            <form action="">
+                <div class="form-box">
+                <h2>Register</h2>
+                <div class="input">
+                    <span class="icon"><i class='bx bxs-user'></i></span>
+                    <input type="text"  required>
+                    <label>Username</label>
+            
+                </div>
+                <div class="input">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                    
+                </div>
+                <button type="submit" class="button">Register</button>
+                <!--<div class="register">
+                    <p>Don't have an account? <a href="">Register</a></p>
+                </div>-->
+                </div>
+
+                </form>
+                </form>
+                </form>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
